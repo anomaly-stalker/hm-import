@@ -61,11 +61,20 @@ namespace TransactionsImport.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\Users\victor.sinitsin\Desktop\HMConverterTemplates.txt.
+        ///   Looks up a localized string similar to C:\Users\Viktor\Desktop\HMConverterTemplates.txt.
         /// </summary>
         internal static string CategoriesConfigFile {
             get {
                 return ResourceManager.GetString("CategoriesConfigFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ,.
+        /// </summary>
+        internal static string InputDecimalSeparator {
+            get {
+                return ResourceManager.GetString("InputDecimalSeparator", resourceCulture);
             }
         }
         

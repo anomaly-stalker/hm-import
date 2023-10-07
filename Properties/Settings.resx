@@ -118,7 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CategoriesConfigFile" xml:space="preserve">
-    <value>C:\Users\victor.sinitsin\Desktop\HMConverterTemplates.txt</value>
+    <value>C:\Users\Viktor\Desktop\HMConverterTemplates.txt</value>
+  </data>
+  <data name="InputDecimalSeparator" xml:space="preserve">
+    <value>,</value>
   </data>
   <data name="OutputTransactionsFile" xml:space="preserve">
     <value>transactions_by_categories.csv</value>

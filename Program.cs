@@ -5,14 +5,14 @@ string? file;
 if (args.Length == 0)
 {
 	Console.WriteLine("Please provide a path to CSV file with transactions:");
-	file = Console.ReadLine();
+	file = Console.ReadLine().Trim('"');
 }
 else
 {
 	file = args[0];
 }
 
-var transactions = new TransactionsReader(file).Read().ToList();
+var transactions = new TransactionsReader(file, Settings.InputDecimalSeparator).Read().ToList();
 Console.WriteLine("{0} transactions read from the file.", transactions.Count);
 
 var classifier = new TransactionsClassifier(Settings.CategoriesConfigFile);
