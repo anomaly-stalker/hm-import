@@ -26,7 +26,7 @@ var groupedTransactions = new TransactionsGrouper().Group(transactions).OrderBy(
 groupedTransactions.ForEach(t =>
 	t.FriendlyDescription += !string.IsNullOrEmpty(t.Budget) ? $"${t.Budget}" : $"@{t.Description}");
 
-var writer = new TransactionsWriter(Settings.OutputTransactionsFile);
+var writer = new TransactionsWriter(Path.Combine(Path.GetDirectoryName(file), Settings.OutputTransactionsFile));
 writer.Write(groupedTransactions);
 Console.WriteLine("{0} transactions were written to {1} file after grouping.",
 	groupedTransactions.Count, Settings.OutputTransactionsFile);
